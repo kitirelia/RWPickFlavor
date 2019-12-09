@@ -52,7 +52,7 @@ spec.requires_arc = true
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://gitlab.com/kitiwat/rwpickflavor", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/kitirelia/RWPickFlavor.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
