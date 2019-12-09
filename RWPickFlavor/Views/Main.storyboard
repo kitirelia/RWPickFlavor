@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8kR-jK-qjy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyGoalQR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPj-g1-43d">
+                                <rect key="frame" x="127" y="202" width="160" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ZbI-AV-32O"/>
+                                    <constraint firstAttribute="width" constant="160" id="lKt-P6-WIU"/>
+                                </constraints>
+                                <state key="normal" title="QR Reader" image="icn_qr">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="qrBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xz-VD-bEX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYM-ik-gCc">
+                                <rect key="frame" x="127" y="390" width="160" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="2p6-Ot-UWF"/>
+                                    <constraint firstAttribute="height" constant="52" id="ogk-RG-iHr"/>
+                                </constraints>
+                                <state key="normal" title=" Alamofire" image="icn_lo">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="alamoBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8R-PT-O2o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yYM-ik-gCc" firstAttribute="top" secondItem="vPj-g1-43d" secondAttribute="bottom" constant="136" id="O0B-KU-GsA"/>
+                            <constraint firstItem="vPj-g1-43d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bb6-P9-8zT"/>
+                            <constraint firstItem="vPj-g1-43d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="mnI-AD-O4k"/>
+                            <constraint firstItem="yYM-ik-gCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="udi-cT-wnQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ubb-l7-wAb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eui-8e-cJ1">
+            <objects>
+                <navigationController storyboardIdentifier="mainVc" automaticallyAdjustsScrollViewInsets="NO" id="8kR-jK-qjy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EzQ-1l-4QH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fEu-JU-hht"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j00-mL-V3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_lo" width="24" height="24"/>
+        <image name="icn_qr" width="24" height="24"/>
+    </resources>
+</document>
