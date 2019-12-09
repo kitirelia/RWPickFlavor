@@ -85,6 +85,7 @@ class BarcodeVC: UIViewController  {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        print("view will appear")
         startScan()
     }
     
