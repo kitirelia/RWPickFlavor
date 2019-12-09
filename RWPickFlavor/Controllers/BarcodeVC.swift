@@ -108,6 +108,12 @@ class BarcodeVC: UIViewController  {
 
 
 extension BarcodeVC: QRCodeReaderViewControllerDelegate{
+    
+    private func testDif(){
+        print("test diff")
+    }
+    
+    
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         reader.stopScanning()
 
